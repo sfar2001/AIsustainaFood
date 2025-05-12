@@ -9,9 +9,3 @@ A Django-based web application for managing stock levels, predicting stock needs
 - **Product Management**: Add, view, and manage products.
 - **Stock Prediction**: Uses a machine learning model to predict stock urgency and provide confidence scores.
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
