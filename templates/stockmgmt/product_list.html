@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Stock</th>
+            <th>Prediction</th>
+            <th>Confidence</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in products %}
+        <tr class="{% if product.prediction %}table-success{% else %}table-warning{% endif %}">
+            <td>{{ product.name }}</td>
+            <td>{{ product.stock }}</td>
+            <td>{{ product.stock_status }}</td>
+            <td>{{ product.confidence_percentage }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
